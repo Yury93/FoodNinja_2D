@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4965228223404882342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210106157020267738, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_Name
+      value: Watermelow Variant Variant Variant Variant Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024827408283942254, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 29dda5ef49d5d2d4db9a1e0a7d8fbf1b, type: 3}
+    - target: {fileID: 7293520288785548456, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: <SliceType>k__BackingField
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293520288785548456, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: <colorSlice>k__BackingField.b
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293520288785548456, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: <colorSlice>k__BackingField.g
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293520288785548456, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: <colorSlice>k__BackingField.r
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
