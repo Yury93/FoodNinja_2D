@@ -48,10 +48,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e1df9fb2d573b488cae5c55a9746a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liveTimer: 6
+  liveTimer: 4
   <colorSlice>k__BackingField: {r: 1, g: 0.77647066, b: 0, a: 1}
   <rbMover>k__BackingField: {fileID: 6857326300028977631}
   <SliceType>k__BackingField: 1
+  <collider2D>k__BackingField: {fileID: 3056244273457196114}
+  <spriteRenderer>k__BackingField: {fileID: 2584873720210961070}
 --- !u!114 &6857326300028977631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,12 +68,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliceTarget: {fileID: 8157028067668478824}
   jump: 0
-  minJump: -3.7
-  maxJump: 0.03
+  minJump: 1
+  maxJump: 1.6
   rb: {fileID: 4853671178803591472}
   moveDirection: {x: 0, y: 1, z: 0}
-  speed: 3.3
+  speed: 7.5
   gravityScale: 0.82
+  addForceTime: 1
 --- !u!50 &4853671178803591472
 Rigidbody2D:
   serializedVersion: 4

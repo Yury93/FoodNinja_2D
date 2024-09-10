@@ -22,9 +22,6 @@ public class GameClose : MonoBehaviour
     }
     public void CallAddScore(int score)
     {
- 
-       //     AddScore(score);
-        
-         
+        AddScore(score);
     }
 }

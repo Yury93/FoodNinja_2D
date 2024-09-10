@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 949425396844456021, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 949425396844456021, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 949425396844456021, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1019331338242641981, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -56,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 29dda5ef49d5d2d4db9a1e0a7d8fbf1b, type: 3}
+    - target: {fileID: 5417340176592817695, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
+      propertyPath: addForceTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7293520288785548456, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
       propertyPath: <SliceType>k__BackingField
       value: 6

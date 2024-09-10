@@ -50,12 +50,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512179917788240042, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
       propertyPath: m_Name
-      value: Grape Variant
+      value: Cocos Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4146293453641916702, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 50ec5dfed67d0b2479e94dd3241eeec9, type: 3}
+    - target: {fileID: 5007962007918072431, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
+      propertyPath: speed
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007962007918072431, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
+      propertyPath: maxJump
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007962007918072431, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
+      propertyPath: minJump
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007962007918072431, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
+      propertyPath: addForceTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738964092264995032, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
+      propertyPath: liveTimer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7738964092264995032, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
       propertyPath: <SliceType>k__BackingField
       value: 3

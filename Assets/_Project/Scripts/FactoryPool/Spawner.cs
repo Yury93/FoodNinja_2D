@@ -22,18 +22,19 @@ public class Spawner : Factory<SliceTarget>
     private void Start()
     {
         IsGameProcess = false;
-        for (int i = 0; i < prefabs.Count; i++)
-        { 
-            int rndShooter = UnityEngine.Random.Range(0, spawnShooters.Count);
-            var spawnShooter = spawnShooters[rndShooter];
-            var newTarget = Create(prefabs[i], spawnShooter.point.position, content, Quaternion.identity);
-            newTarget.Init();
-            newTarget.onSlice += OnSlice;
-            newTarget.rbMover.SetDirection(spawnShooter.direction);
-            targets.Add(newTarget);
-            newTarget.Active();
-            newTarget.Deactive();
-        }
+        targets = new List<SliceTarget>();
+        //for (int i = 0; i < prefabs.Count; i++)
+        //{ 
+        //    int rndShooter = UnityEngine.Random.Range(0, spawnShooters.Count);
+        //    var spawnShooter = spawnShooters[rndShooter];
+        //    var newTarget = Create(prefabs[i], spawnShooter.point.position, content, Quaternion.identity);
+        //    newTarget.Init();
+        //    newTarget.onSlice += OnSlice;
+        //    newTarget.rbMover.SetDirection(spawnShooter.direction);
+        //    targets.Add(newTarget);
+        //    newTarget.Active();
+        //    newTarget.Deactive();
+        //}
     }
     private void Update()
     {
@@ -52,13 +53,15 @@ public class Spawner : Factory<SliceTarget>
     } 
     private void SpawnInPool()
     { 
-        var poolTargets = targets.Where(t => !t.enabled == true).ToList();
-        if (poolTargets.Count == 0)
-        {
+        var poolTargets = targets.Where(t => !t.spriteRenderer.enabled == true
+        || !t.gameObject.activeSelf && t.SliceType == SliceTarget.SliceName.bomb).ToList();
+        if (poolTargets.Count == 0 && prefabs.Count !=0 || prefabs.Count != 0)
+        { 
             CreateNewTarget();
         }
         else
         {
+            if(poolTargets.Count > 0)
             TakeOfPoolTarget(poolTargets);
         }
     }
@@ -77,12 +80,14 @@ public class Spawner : Factory<SliceTarget>
     { 
         int rnd = UnityEngine.Random.Range(0, prefabs.Count);
         int rndShooter = UnityEngine.Random.Range(0, spawnShooters.Count);
-        var spawnShooter = spawnShooters[rndShooter]; 
-        var newTarget = Create(prefabs[rnd], spawnShooter.point.position, content, Quaternion.identity);
+        var spawnShooter = spawnShooters[rndShooter];
+       var prefab = prefabs[rnd];
+        var newTarget = Create(prefab , spawnShooter.point.position, content, Quaternion.identity);
         newTarget.Init();
         newTarget.onSlice += OnSlice;
         newTarget.rbMover.SetDirection(spawnShooter.direction);
         targets.Add(newTarget);
+        prefabs.Remove(prefab);
         newTarget.Active();
     }
 

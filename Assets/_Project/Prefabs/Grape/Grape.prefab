@@ -92,6 +92,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grape
       objectReference: {fileID: 0}
+    - target: {fileID: 6857326300028977631, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
+      propertyPath: speed
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6857326300028977631, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
+      propertyPath: maxJump
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6857326300028977631, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
+      propertyPath: minJump
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6857326300028977631, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
+      propertyPath: addForceTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157028067668478824, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
+      propertyPath: liveTimer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8157028067668478824, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
       propertyPath: <SliceType>k__BackingField
       value: 0

@@ -52,6 +52,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlicedObject Variant Variant Variant Variant Variant Variant Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4651655482982273682, guid: 2a783e435510a8b4e988a87787c3c218, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651655482982273682, guid: 2a783e435510a8b4e988a87787c3c218, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4651655482982273682, guid: 2a783e435510a8b4e988a87787c3c218, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5479906325085994524, guid: 2a783e435510a8b4e988a87787c3c218, type: 3}
       propertyPath: <sliceName>k__BackingField
       value: 6

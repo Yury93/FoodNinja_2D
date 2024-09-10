@@ -11,6 +11,7 @@ public class UIService : MonoBehaviour
     public int startLives;
     private int lives;
     public int score;
+    public int startTime_minutes;
     public TextMeshProUGUI scoreText;
     public GameObject heartPrefab;
     public List<GameObject> hearts = new List<GameObject>();
@@ -49,7 +50,7 @@ public class UIService : MonoBehaviour
 
     private void ShowTimer()
     {
-        var finish = startGameTimer.AddMinutes(1);
+        var finish = startGameTimer.AddMinutes(startTime_minutes);
         var timeLeft =   finish - DateTime.Now;
         if (timeLeft.TotalSeconds > 0)
             timerText.text = $"TIMER:{timeLeft.Minutes:00}:{timeLeft.Seconds:00}";

@@ -310,6 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startLives: 3
   score: 0
+  startTime_minutes: 1
   scoreText: {fileID: 2032666261}
   heartPrefab: {fileID: 1521646058697778486, guid: 6b0f8f5536e702145989d91a791f1160, type: 3}
   hearts: []
@@ -1047,17 +1048,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 8653680940764746392, guid: dfd98e721257f0749bb4e68f7b0f0083, type: 3}
+  - {fileID: 7738964092264995032, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
   - {fileID: 2440883706431307022, guid: 85d7c0e7f8c47b147ad6557e5c64048a, type: 3}
   - {fileID: 327655194751112112, guid: d319b7002ce7d1b4c950479d7c03305b, type: 3}
+  - {fileID: 8653680940764746392, guid: dfd98e721257f0749bb4e68f7b0f0083, type: 3}
   - {fileID: 4156469575178566961, guid: 320953054d07ade47bb1626b90a755ed, type: 3}
   - {fileID: 4792098345875895344, guid: 4860437513bdad9429f0afd12ad4ac20, type: 3}
-  - {fileID: 7738964092264995032, guid: 8e557109cb353be46af77935f7aeecc2, type: 3}
   - {fileID: 8653680940764746392, guid: dfd98e721257f0749bb4e68f7b0f0083, type: 3}
   - {fileID: 6611854601295793465, guid: 1b68808ab49a4424ab17010c221cbec6, type: 3}
   - {fileID: 8157028067668478824, guid: 13b47f269da7c9b4186258ebdec4a2c6, type: 3}
   - {fileID: 8151555665005906602, guid: 793debf3fb0b6f54db2217aac3713ad4, type: 3}
-  - {fileID: 8653680940764746392, guid: dfd98e721257f0749bb4e68f7b0f0083, type: 3}
   - {fileID: 1980921883038358948, guid: 8352e481b58b008478621d0c9c24791b, type: 3}
   - {fileID: 5984272048365540164, guid: 8a7bef5af5b666a4688bb9bf33ea76ae, type: 3}
   - {fileID: 7293520288785548456, guid: 34b7d8e6d57a4364186a9277c15da753, type: 3}
@@ -1075,8 +1075,8 @@ MonoBehaviour:
   - point: {fileID: 1679631872}
     direction: {x: -0.2, y: 1, z: 0}
   content: {fileID: 814369043}
-  minTimeSpawn: 0.26
-  maxTimeSpawn: 0.91
+  minTimeSpawn: 0.18
+  maxTimeSpawn: 0.76
   targets: []
 --- !u!4 &814369043
 Transform:
@@ -1363,6 +1363,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: TrailModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TriggerModule.enter
       value: 2
       objectReference: {fileID: 0}
@@ -1380,7 +1388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.shadowBias
-      value: 1.52
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.worldSpace
@@ -1391,20 +1399,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: TrailModule.textureMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: TrailModule.textureScale.x
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: TrailModule.textureScale.y
+      value: 1.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.lifetime.scalar
-      value: 0.27
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.dieWithParticles
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.sizeAffectsWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.minVertexDistance
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.sizeAffectsLifetime
@@ -1416,11 +1440,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TrailModule.widthOverTrail.scalar
-      value: 0.19
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 1.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1234057436548546525, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: TriggerModule.primitives.Array.size
@@ -1505,7 +1537,7 @@ PrefabInstance:
     - target: {fileID: 6080427513731052126, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: 061b17eb749fabc4ab7a9cc37ad742a8, type: 2}
     - target: {fileID: 6080427513731052126, guid: 3597787bd8b9f974f94549e9c7157738, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 

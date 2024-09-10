@@ -13,8 +13,9 @@ public class TouchCollider : MonoBehaviour
         if (Spawner.IsGameProcess)
         {
             var sliceTarget = collision.GetComponent<SliceTarget>();
-            if (sliceTarget != null && sliceTarget.gameObject.activeSelf)
-            {
+            if (sliceTarget != null && sliceTarget.SliceType == SliceTarget.SliceName.bomb ||
+   sliceTarget != null && sliceTarget.spriteRenderer.enabled && sliceTarget.SliceType != SliceTarget.SliceName.bomb)
+            { 
                 onEnterSliceTarget(sliceTarget);
             }
         }
@@ -24,7 +25,8 @@ public class TouchCollider : MonoBehaviour
         if (Spawner.IsGameProcess)
         {
             var sliceTarget = collision.GetComponent<SliceTarget>();
-            if (sliceTarget != null && sliceTarget.gameObject.activeSelf)
+            if (sliceTarget != null &&  sliceTarget.gameObject.activeSelf && sliceTarget.SliceType == SliceTarget.SliceName.bomb ||
+              sliceTarget != null && sliceTarget.spriteRenderer.enabled && sliceTarget.SliceType != SliceTarget.SliceName.bomb)
             {
                 onExit?.Invoke();
             }
